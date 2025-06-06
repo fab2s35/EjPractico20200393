@@ -1,6 +1,6 @@
 import React from 'react';
 import './MainPage.css'; 
-import Tittle from "../../components/Tittle";
+import Title from "../../components/Title";
 
 function MainPage() {
     return (
@@ -15,7 +15,7 @@ function MainPage() {
               </span>
             </div>
             <div className="text-center">
-              <Tittle Tittle="User Information" />
+              <Title title="Andrea's Online Courses" />
               <p className="banner-description">
               Página de gestión del manejo de los cursos dentro del programa de cursos, diseñado para poder vizualizar los cursos, agregarlos, editarlos y eliminiarlos. Permitiendo llevar la mejor gestión posible.
               </p>

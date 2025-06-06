@@ -1,0 +1,58 @@
+
+/* Fondo */
+.body {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background: linear-gradient(to top right, #fabcaa, #fbd0c3, #f6bbf0);
+  opacity: 0.3;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+/* Título */
+.tittle {
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+/* Botón */
+.custom-cancel-button {
+  color: #a56571 !important;
+  border-color: #a56571 !important;
+}
+
+.custom-cancel-button:hover {
+  background-color: #f3e6e9 !important;
+  border-color: #a56571 !important;
+}
+
+.responsive-scroll-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Scroll horizontal para Crud en pantallas pequeñas */
+.crud-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Fuerza ancho mínimo al grid en pantallas pequeñas */
+@media (max-width: 768px) {
+  .crud-scroll-wrapper .MuiDataGrid-root {
+    min-width: 700px; /* o más, si hay muchas columnas */
+  }
+}
+
+/* Evita que columnas se compriman demasiado */
+.MuiDataGrid-cell {
+  white-space: nowrap;
+}
+
+
+@media screen and (max-width: 768px) {
+  .MuiDataGrid-root {
+    min-width: 700px;
+  }
+}
